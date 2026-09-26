@@ -1,0 +1,124 @@
+{
+  "4": [
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "datamitsu-lint",
+      "state": "open",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample hadolint finding H2"
+      },
+      "location": {
+        "path": "Dockerfile",
+        "start_line": 2,
+        "end_line": 2,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    }
+  ],
+  "3": [
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "datamitsu-lint",
+      "state": "open",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample hadolint finding H1"
+      },
+      "location": {
+        "path": "Dockerfile",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    }
+  ],
+  "2": [
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "cat-a",
+      "state": "open",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample eslint finding E2"
+      },
+      "location": {
+        "path": "src/a.ts",
+        "start_line": 2,
+        "end_line": 2,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    },
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "datamitsu-lint",
+      "state": "fixed",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample eslint finding E2"
+      },
+      "location": {
+        "path": "src/a.ts",
+        "start_line": 2,
+        "end_line": 2,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    }
+  ],
+  "1": [
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "cat-a",
+      "state": "open",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample eslint finding E1"
+      },
+      "location": {
+        "path": "src/a.ts",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    },
+    {
+      "ref": "refs/heads/main",
+      "analysis_key": "(default)",
+      "environment": "{}",
+      "category": "datamitsu-lint",
+      "state": "open",
+      "commit_sha": "3b2a3a56c7cd0b3e2ab87d8ccc8416fe7d383b75",
+      "message": {
+        "text": "Sample eslint finding E1"
+      },
+      "location": {
+        "path": "src/a.ts",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 0
+      },
+      "classifications": []
+    }
+  ]
+}
