@@ -1,0 +1,12 @@
+{
+  "post": {
+    "id": "cbd10abe-b9dd-11f1-8a94-5948df353a37",
+    "url": "https://api.github.com/repos/datamitsu/sarif-alert-lifecycle-test/code-scanning/sarifs/cbd10abe-b9dd-11f1-8a94-5948df353a37"
+  },
+  "final_status": {
+    "processing_status": "complete",
+    "errors": null,
+    "analyses_url": "https://api.github.com/repos/datamitsu/sarif-alert-lifecycle-test/code-scanning/analyses?sarif_id=cbd10abe-b9dd-11f1-8a94-5948df353a37"
+  },
+  "observed_complete_at": "2026-09-26T19:09:29Z"
+}
