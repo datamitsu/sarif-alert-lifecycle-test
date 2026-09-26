@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "eslint",
+          "version": "9.0.0",
+          "rules": [
+            {
+              "id": "E1",
+              "shortDescription": {
+                "text": "Rule E1"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "datamitsu-lint/"
+      },
+      "results": [
+        {
+          "ruleId": "E1",
+          "level": "warning",
+          "message": {
+            "text": "Sample eslint finding E1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e54ac253aec7c0c580e047e4277d1cdb49574a5cc5e3128c45df9beecb9fc275:1"
+          }
+        }
+      ]
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "eslint",
+          "version": "9.0.0",
+          "rules": [
+            {
+              "id": "E2",
+              "shortDescription": {
+                "text": "Rule E2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "datamitsu-lint/"
+      },
+      "results": [
+        {
+          "ruleId": "E2",
+          "level": "warning",
+          "message": {
+            "text": "Sample eslint finding E2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cf35cc933cc63fa96777410765e637c640e6ceec2954a1cb824d1c3a4ab84db2:1"
+          }
+        }
+      ]
+    }
+  ]
+}
