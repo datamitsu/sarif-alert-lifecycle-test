@@ -1,0 +1,5 @@
+HTTP/2.0 404 Not Found
+Content-Type: application/json; charset=utf-8
+X-Accepted-Oauth-Scopes: admin:repo_hook, delete_repo, read:repo_hook, repo, repo:invite, repo:status, repo_deployment, security_events, write:repo_hook
+
+{"message":"No analysis found for analysis ID 1845094684","documentation_url":"https://docs.github.com/rest/code-scanning/code-scanning#get-a-code-scanning-analysis-for-a-repository","status":"404"}gh: No analysis found for analysis ID 1845094684 (HTTP 404)
