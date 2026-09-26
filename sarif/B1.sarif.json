@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "toolz",
+          "version": "1.0.0",
+          "rules": [
+            {
+              "id": "Z1",
+              "shortDescription": {
+                "text": "Rule Z1"
+              }
+            },
+            {
+              "id": "Z2",
+              "shortDescription": {
+                "text": "Rule Z2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "del-test/"
+      },
+      "results": [
+        {
+          "ruleId": "Z1",
+          "level": "warning",
+          "message": {
+            "text": "toolz finding Z1 at Dockerfile:3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e1db3c3102d856564d8e067132cad4325d5af7e95c8fd748acac4cef68fc7acd:1"
+          }
+        },
+        {
+          "ruleId": "Z2",
+          "level": "warning",
+          "message": {
+            "text": "toolz finding Z2 at Dockerfile:4"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "95b3bc174459eab46f701a60fa025c33067232af6faa3f635a5b22dc0ecf7f03:1"
+          }
+        }
+      ]
+    }
+  ]
+}
