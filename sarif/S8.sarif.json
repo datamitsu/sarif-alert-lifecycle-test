@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "probe",
+          "version": "0.0.1",
+          "rules": [
+            {
+              "id": "P1",
+              "shortDescription": {
+                "text": "Rule P1"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "probe-noslash"
+      },
+      "results": [
+        {
+          "ruleId": "P1",
+          "level": "warning",
+          "message": {
+            "text": "Sample probe finding P1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "README.md",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "bbd03eb5a3196928d6c3597f9e44d033515615e770c8b6c3a0d9afc0b9a230a7:1"
+          }
+        }
+      ]
+    }
+  ]
+}
