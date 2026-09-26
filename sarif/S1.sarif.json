@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "eslint",
+          "version": "9.0.0",
+          "rules": [
+            {
+              "id": "E1",
+              "shortDescription": {
+                "text": "Rule E1"
+              }
+            },
+            {
+              "id": "E2",
+              "shortDescription": {
+                "text": "Rule E2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "datamitsu-lint/"
+      },
+      "results": [
+        {
+          "ruleId": "E1",
+          "level": "warning",
+          "message": {
+            "text": "Sample eslint finding E1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e54ac253aec7c0c580e047e4277d1cdb49574a5cc5e3128c45df9beecb9fc275:1"
+          }
+        },
+        {
+          "ruleId": "E2",
+          "level": "warning",
+          "message": {
+            "text": "Sample eslint finding E2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cf35cc933cc63fa96777410765e637c640e6ceec2954a1cb824d1c3a4ab84db2:1"
+          }
+        }
+      ]
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "hadolint",
+          "version": "2.12.0",
+          "rules": [
+            {
+              "id": "H1",
+              "shortDescription": {
+                "text": "Rule H1"
+              }
+            },
+            {
+              "id": "H2",
+              "shortDescription": {
+                "text": "Rule H2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "datamitsu-lint/"
+      },
+      "results": [
+        {
+          "ruleId": "H1",
+          "level": "warning",
+          "message": {
+            "text": "Sample hadolint finding H1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "5c5a975f1b8894ed5fa2d7b9fe11f78ec2fccdab7c29c2d24baa042aeb112409:1"
+          }
+        },
+        {
+          "ruleId": "H2",
+          "level": "warning",
+          "message": {
+            "text": "Sample hadolint finding H2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "389bc87f2e30520f4ae63a507da3eaef6ead5e1f49e81cf5f3ce408f69217bb7:1"
+          }
+        }
+      ]
+    }
+  ]
+}
