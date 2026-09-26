@@ -13,6 +13,13 @@ for s in open fixed closed dismissed; do
   [ -s "$out/$step-alerts-$s.err" ] || rm -f "$out/$step-alerts-$s.err"
 done
 gh api "repos/$R/code-scanning/analyses?ref=$REF&per_page=100" > "$out/$step-analyses.json"
+# follow-up steps: which alerts each synthetic tool is associated with (tool_name filter)
+case "$step" in A*|B*)
+  for t in ${SNAP_TOOLS:-toolx tooly}; do
+    gh api "repos/$R/code-scanning/alerts?ref=$REF&tool_name=$t&per_page=100" > "$out/$step-alerts-tool_name-$t.json"
+    echo "-- tool_name=$t -> alerts: $(jq -c '[.[] | {n: .number, rule: .rule.id, tool: .tool.name, state}]' "$out/$step-alerts-tool_name-$t.json")"
+  done;;
+esac
 # all alerts regardless of state, then their instances
 gh api "repos/$R/code-scanning/alerts?per_page=100" > "$out/.all.json"
 echo '{}' > "$out/$step-instances.json"
@@ -32,4 +39,4 @@ echo "-- counts: open=$(jq length "$out/$step-alerts-open.json") fixed=$(jq leng
 echo "-- analyses"
 jq -r '.[] | [.id, .category, .tool.name, .results_count, .rules_count, .deletable, (.warning|tostring), .created_at, .sarif_id] | @tsv' "$out/$step-analyses.json"
 echo "-- instances per alert"
-jq -r 'to_entries | sort_by(.key|tonumber) | .[] | "#\(.key): " + ([.value[] | "\(.ref)|\(.category)|\(.state)|\(.analysis_key)"] | join("  ;  "))' "$out/$step-instances.json"
+jq -r 'to_entries | sort_by(.key|tonumber) | .[] | "#\(.key): " + ([.value[] | "\(.ref)|\(.category)|\(.state)|\(.analysis_key)|tool=\(.tool.name // "n/a")|\(.message.text)"] | join("  ;  "))' "$out/$step-instances.json"
