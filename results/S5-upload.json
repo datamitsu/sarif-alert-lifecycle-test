@@ -1,0 +1,12 @@
+{
+  "post": {
+    "id": "690f65cc-b9da-11f1-85c5-9f7eca80045e",
+    "url": "https://api.github.com/repos/datamitsu/sarif-alert-lifecycle-test/code-scanning/sarifs/690f65cc-b9da-11f1-85c5-9f7eca80045e"
+  },
+  "final_status": {
+    "processing_status": "complete",
+    "errors": null,
+    "analyses_url": "https://api.github.com/repos/datamitsu/sarif-alert-lifecycle-test/code-scanning/analyses?sarif_id=690f65cc-b9da-11f1-85c5-9f7eca80045e"
+  },
+  "observed_complete_at": "2026-09-26T18:45:15Z"
+}
