@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "toolx",
+          "version": "1.0.0",
+          "rules": [
+            {
+              "id": "M1",
+              "shortDescription": {
+                "text": "Rule M1"
+              }
+            },
+            {
+              "id": "toolx/M2",
+              "shortDescription": {
+                "text": "Rule toolx/M2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "merge-test/"
+      },
+      "results": [
+        {
+          "ruleId": "M1",
+          "level": "warning",
+          "message": {
+            "text": "toolx finding M1 at src/a.ts:3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9075158ed22c5a8f1ff6b501e38fa941ac613231a34d46deda99b3d01f662f24:1"
+          }
+        },
+        {
+          "ruleId": "toolx/M2",
+          "level": "warning",
+          "message": {
+            "text": "toolx finding toolx/M2 at src/a.ts:4"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cc2687120865f734662ecc9e59c95f2aa9243d7950e3e919c8fe0560201c10ee:1"
+          }
+        }
+      ]
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "tooly",
+          "version": "1.0.0",
+          "rules": [
+            {
+              "id": "M1",
+              "shortDescription": {
+                "text": "Rule M1"
+              }
+            },
+            {
+              "id": "tooly/M2",
+              "shortDescription": {
+                "text": "Rule tooly/M2"
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "merge-test/"
+      },
+      "results": [
+        {
+          "ruleId": "M1",
+          "level": "warning",
+          "message": {
+            "text": "tooly finding M1 at src/a.ts:3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9075158ed22c5a8f1ff6b501e38fa941ac613231a34d46deda99b3d01f662f24:1"
+          }
+        },
+        {
+          "ruleId": "tooly/M2",
+          "level": "warning",
+          "message": {
+            "text": "tooly finding tooly/M2 at src/a.ts:4"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cc2687120865f734662ecc9e59c95f2aa9243d7950e3e919c8fe0560201c10ee:1"
+          }
+        }
+      ]
+    }
+  ]
+}
