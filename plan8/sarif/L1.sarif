@@ -134,7 +134,7 @@
       },
       "invocations": [
         {
-          "executionSuccessful": false,
+          "executionSuccessful": true,
           "exitCode": 0,
           "workingDirectory": {
             "uri": "./",
