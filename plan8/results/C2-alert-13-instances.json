@@ -1,0 +1,1 @@
+[{"ref":"refs/heads/main","analysis_key":"(default)","environment":"{}","category":"datamitsu","state":"open","commit_sha":"26e024b0081deb4017efc430435567399a2b84bb","message":{"text":"Pin versions in apk add"},"location":{"path":"Dockerfile","start_line":2,"end_line":2,"start_column":1,"end_column":0},"classifications":[]}]

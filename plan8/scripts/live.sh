@@ -6,13 +6,13 @@
 #
 #   sh plan8/scripts/live.sh C1   # then C2, C5, C6, C7 in that order
 #
-# C3 and C4 go through github/codeql-action/upload-sarif: move
-# plan8/workflows/plan8-upload-sarif.yml to .github/workflows/ first, then
-#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L3/datamitsu-1.sarif -f category=
-#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L3/datamitsu-2.sarif -f category=
-#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L3 -f category=          # C3b
-#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L4.sarif -f category=other
-# and snapshot after each with `sh plan8/scripts/live.sh snapshot C3` (C3b, C4).
+# C3, C3b, C4 and C5b go through github/codeql-action/upload-sarif, with
+# .github/workflows/plan8-upload-sarif.yml:
+#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L3/datamitsu-1.sarif -f path2=plan8/sarif/L3/datamitsu-2.sarif -f category=  # C3
+#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L3 -f category=              # C3b
+#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L4.sarif -f category=other   # C4
+#   gh workflow run plan8-upload-sarif.yml -f path=plan8/sarif/L5.sarif -f category=        # C5b
+# and snapshot after each with `sh plan8/scripts/live.sh snapshot C3` (C3b, C4, C5b).
 set -eu
 
 REPO=datamitsu/sarif-alert-lifecycle-test

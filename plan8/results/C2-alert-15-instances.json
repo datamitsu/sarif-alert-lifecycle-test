@@ -1,0 +1,1 @@
+[{"ref":"refs/heads/main","analysis_key":"(default)","environment":"{}","category":"datamitsu","state":"open","commit_sha":"26e024b0081deb4017efc430435567399a2b84bb","message":{"text":"a is declared but never read"},"location":{"path":"src/a.ts","start_line":1,"end_line":1,"start_column":17,"end_column":0},"classifications":[]}]

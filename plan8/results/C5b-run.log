@@ -1,0 +1,174 @@
+upload	Set up job	﻿2026-09-28T13:10:52.4525749Z Current runner version: '2.337.0'
+upload	Set up job	2026-09-28T13:10:52.4543280Z ##[group]Runner Image Provisioner
+upload	Set up job	2026-09-28T13:10:52.4543935Z Hosted Compute Agent
+upload	Set up job	2026-09-28T13:10:52.4544405Z Version: 20260828.587
+upload	Set up job	2026-09-28T13:10:52.4544888Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+upload	Set up job	2026-09-28T13:10:52.4545408Z Build Date: 2026-08-28T16:44:25Z
+upload	Set up job	2026-09-28T13:10:52.4545909Z Worker ID: {d1e6b54e-5143-4fc7-80a9-33f29c78fdf3}
+upload	Set up job	2026-09-28T13:10:52.4546401Z Azure Region: centralus
+upload	Set up job	2026-09-28T13:10:52.4546886Z ##[endgroup]
+upload	Set up job	2026-09-28T13:10:52.4547909Z ##[group]Operating System
+upload	Set up job	2026-09-28T13:10:52.4548566Z Ubuntu
+upload	Set up job	2026-09-28T13:10:52.4549060Z 24.04.5
+upload	Set up job	2026-09-28T13:10:52.4549421Z LTS
+upload	Set up job	2026-09-28T13:10:52.4549777Z ##[endgroup]
+upload	Set up job	2026-09-28T13:10:52.4550228Z ##[group]Runner Image
+upload	Set up job	2026-09-28T13:10:52.4550640Z Image: ubuntu-24.04
+upload	Set up job	2026-09-28T13:10:52.4551113Z Version: 20260920.314.1
+upload	Set up job	2026-09-28T13:10:52.4552006Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+upload	Set up job	2026-09-28T13:10:52.4553553Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+upload	Set up job	2026-09-28T13:10:52.4554397Z ##[endgroup]
+upload	Set up job	2026-09-28T13:10:52.4555383Z ##[group]GITHUB_TOKEN Permissions
+upload	Set up job	2026-09-28T13:10:52.4557530Z Contents: read
+upload	Set up job	2026-09-28T13:10:52.4557975Z Metadata: read
+upload	Set up job	2026-09-28T13:10:52.4558726Z SecurityEvents: write
+upload	Set up job	2026-09-28T13:10:52.4559222Z ##[endgroup]
+upload	Set up job	2026-09-28T13:10:52.4560997Z Secret source: Actions
+upload	Set up job	2026-09-28T13:10:52.4562094Z Cache mode: write
+upload	Set up job	2026-09-28T13:10:52.4562642Z Prepare workflow directory
+upload	Set up job	2026-09-28T13:10:52.4796000Z Prepare all required actions
+upload	Set up job	2026-09-28T13:10:52.4832284Z Getting action download info
+upload	Set up job	2026-09-28T13:10:52.7629212Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+upload	Set up job	2026-09-28T13:10:53.1757458Z Download action repository 'github/codeql-action@b96794f015dfd88f77b49b1c93e0fa7110f94c63' (SHA:b96794f015dfd88f77b49b1c93e0fa7110f94c63)
+upload	Set up job	2026-09-28T13:10:53.9070711Z Complete job name: upload
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-09-28T13:10:53.9587374Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9588313Z with:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9589136Z   repository: datamitsu/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9592389Z   token: ***
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9593267Z   ssh-strict: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9593675Z   ssh-user: git
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9594102Z   persist-credentials: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9594556Z   clean: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9594973Z   sparse-checkout-cone-mode: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9595501Z   fetch-depth: 1
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9595906Z   fetch-tags: false
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9596318Z   show-progress: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9596746Z   lfs: false
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9597155Z   submodules: false
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9597620Z   set-safe-directory: true
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9598086Z   allow-unsafe-pr-checkout: false
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:53.9598891Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0342860Z Syncing repository: datamitsu/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0344959Z ##[group]Getting Git version info
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0345901Z Working directory is '/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test'
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0347300Z [command]/usr/bin/git version
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0387175Z git version 2.55.0
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0408060Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0415074Z Temporarily overriding HOME='/home/runner/work/_temp/fe999379-61ef-46f5-8006-46cfc6fec3eb' before making global git config changes
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0416961Z Adding repository directory to the temporary git global config as a safe directory
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0419390Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0454272Z Deleting the contents of '/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test'
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0456134Z ##[group]Determining repository object format
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0457275Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0458595Z ##[group]Initializing the repository
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0460767Z [command]/usr/bin/git init /home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0542374Z hint: Using 'master' as the name for the initial branch. This default branch name
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0546299Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0548093Z hint: to use in all of your new repositories, which will suppress this warning,
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0549581Z hint: call:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0550378Z hint:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0551246Z hint: 	git config --global init.defaultBranch <name>
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0552038Z hint:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0553421Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0554954Z hint: 'development'. The just-created branch can be renamed via this command:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0556117Z hint:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0556866Z hint: 	git branch -m <name>
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0557870Z hint:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0559265Z hint: Disable this message with "git config set advice.defaultBranchName false"
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0561107Z Initialized empty Git repository in /home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git/
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0564340Z [command]/usr/bin/git remote add origin https://github.com/datamitsu/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0586111Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0587092Z ##[group]Disabling automatic garbage collection
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0588766Z [command]/usr/bin/git config --local gc.auto 0
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0611235Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0612325Z ##[group]Setting up auth
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0612964Z Removing SSH command configuration
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0615896Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0643489Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0969272Z Removing HTTP extra header
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0973412Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.0997795Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1133872Z Removing includeIf entries pointing to credentials config files
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1137297Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1157938Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1308901Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1328163Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git.path /home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1349857Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1374946Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1397236Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1416855Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1417565Z ##[group]Fetching the repository
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:54.1421275Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +976cd39518f9173f05e1eee98eb85469c5b5ca08:refs/remotes/origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0415818Z From https://github.com/datamitsu/sarif-alert-lifecycle-test
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0417942Z  * [new ref]         976cd39518f9173f05e1eee98eb85469c5b5ca08 -> origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0424514Z [command]/usr/bin/git branch --list --remote origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0447717Z   origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0452628Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0471328Z 976cd39518f9173f05e1eee98eb85469c5b5ca08
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0474662Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0476088Z ##[group]Determining the checkout info
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0477916Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0479209Z [command]/usr/bin/git sparse-checkout disable
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0519131Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0545809Z ##[group]Checking out the ref
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.0548072Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.2299452Z Switched to a new branch 'main'
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.2301425Z branch 'main' set up to track 'origin/main'.
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.2308276Z ##[endgroup]
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.2424752Z [command]/usr/bin/git log -1 --format=%H
+upload	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:55.2446221Z 976cd39518f9173f05e1eee98eb85469c5b5ca08
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	﻿2026-09-28T13:10:55.2734828Z ##[group]Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2736345Z with:
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2737105Z   sarif_file: plan8/sarif/L5.sarif
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2738654Z   checkout_path: /home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2746701Z   token: ***
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2747475Z   matrix: null
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2748274Z   wait-for-processing: true
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.2749208Z ##[endgroup]
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:55.4513112Z Job run UUID is 2f83a54b-5d19-4d19-87f4-c20bf9a0b9c0.
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.3836598Z Post-processing sarif files: ["plan8/sarif/L5.sarif"]
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.3840694Z Adding fingerprints to SARIF file. See https://docs.github.com/en/code-security/reference/code-scanning/sarif-support-for-code-scanning#data-for-preventing-duplicated-alerts for more information.
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.3843681Z ##[group]Uploading code scanning results
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.3920129Z Uploading results
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.5399141Z ##[warning]Invalid request.
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	1 item required; only 0 were supplied. - https://docs.github.com/rest
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:56.5473815Z ##[error]Invalid request.
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	
+upload	Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	1 item required; only 0 were supplied. - https://docs.github.com/rest
+upload	Post Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	﻿2026-09-28T13:10:57.0188029Z Post job cleanup.
+upload	Post Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:57.2146259Z ##[group]Uploading combined SARIF debug artifact
+upload	Post Run github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63	2026-09-28T13:10:57.2148547Z ##[endgroup]
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-09-28T13:10:57.2344771Z Post job cleanup.
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3048108Z [command]/usr/bin/git version
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3082174Z git version 2.55.0
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3119127Z Temporarily overriding HOME='/home/runner/work/_temp/abc03429-ea68-4209-8ae4-c3698593200f' before making global git config changes
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3120400Z Adding repository directory to the temporary git global config as a safe directory
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3123479Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3150107Z Removing SSH command configuration
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3154651Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3183310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3355912Z Removing HTTP extra header
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3360692Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3386155Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3570205Z Removing includeIf entries pointing to credentials config files
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3574927Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3595607Z includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3596577Z includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git/worktrees/*.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3597289Z includeif.gitdir:/github/workspace/.git.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3597751Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3604010Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3622535Z /home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3633972Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-20f0c79c\-6a26\-41bb\-a6fc\-7ab02ad1f674\.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3664530Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git/worktrees/*.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3682673Z /home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3702581Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/sarif-alert-lifecycle-test/sarif-alert-lifecycle-test/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-20f0c79c\-6a26\-41bb\-a6fc\-7ab02ad1f674\.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3731824Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3749103Z /github/runner_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3754757Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-20f0c79c\-6a26\-41bb\-a6fc\-7ab02ad1f674\.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3782520Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3800963Z /github/runner_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3807124Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-20f0c79c\-6a26\-41bb\-a6fc\-7ab02ad1f674\.config
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3834833Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+upload	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-09-28T13:10:57.3982762Z Removing credentials config '/home/runner/work/_temp/git-credentials-20f0c79c-6a26-41bb-a6fc-7ab02ad1f674.config'
+upload	Complete job	﻿2026-09-28T13:10:57.4103593Z Cleaning up orphan processes
