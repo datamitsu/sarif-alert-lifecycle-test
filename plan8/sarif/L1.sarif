@@ -1,0 +1,218 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "hadolint",
+          "rules": [
+            {
+              "id": "DL3018",
+              "shortDescription": {
+                "text": "DL3018"
+              }
+            },
+            {
+              "id": "DL3059",
+              "shortDescription": {
+                "text": "DL3059"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "hadolint::1#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "DL3018",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Pin versions in apk add"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "7fbf4e4529d41ef24a00abf65267f2fe985e16a0d00e3091cec3e7548f165801",
+            "primaryLocationLineHash": "7fbf4e4529d41ef24a00abf65267f2fe985e16a0d00e3091cec3e7548f165801"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        },
+        {
+          "ruleId": "DL3059",
+          "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "Multiple consecutive COPY instructions"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "bee06a1ef253c0369677bc7fee9f8e178909fb75848d9ab81d2c007647b895f3",
+            "primaryLocationLineHash": "bee06a1ef253c0369677bc7fee9f8e178909fb75848d9ab81d2c007647b895f3"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "typecheck",
+          "rules": [
+            {
+              "id": "TS2322",
+              "shortDescription": {
+                "text": "TS2322"
+              }
+            },
+            {
+              "id": "TS6133",
+              "shortDescription": {
+                "text": "TS6133"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": false,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "typecheck::2#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "TS6133",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "a is declared but never read"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 17,
+                  "endLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "8b0fdd9a6276576715895ee0b1fb98c6a7348317c13b7630a0e872fd1a8a0f4f",
+            "primaryLocationLineHash": "8b0fdd9a6276576715895ee0b1fb98c6a7348317c13b7630a0e872fd1a8a0f4f"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        },
+        {
+          "ruleId": "TS2322",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Type number is not assignable"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 14,
+                  "endLine": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "40aa52fec70292f7e5298b6936e3d0c8562971c5adb0ec5f025010f5ef6bf7eb",
+            "primaryLocationLineHash": "40aa52fec70292f7e5298b6936e3d0c8562971c5adb0ec5f025010f5ef6bf7eb"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": true
+          }
+        }
+      ]
+    }
+  ]
+}
