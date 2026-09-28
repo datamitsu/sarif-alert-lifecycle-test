@@ -1,0 +1,27 @@
+# Plan 8 live check: uploads SARIF through github/codeql-action/upload-sarif,
+# the way a datamitsu user's workflow does. Inactive here: move it to
+# .github/workflows/ to run it (a token needs the workflow scope to write
+# there).
+name: plan8 upload-sarif
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        default: ""
+        description: The action's category input (a file that names its own keeps it)
+        required: false
+      path:
+        description: A SARIF file, or a directory of them
+        required: true
+permissions:
+  contents: read
+  security-events: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: github/codeql-action/upload-sarif@b96794f015dfd88f77b49b1c93e0fa7110f94c63 # v4.38.0
+        with:
+          category: ${{ inputs.category }}
+          sarif_file: ${{ inputs.path }}
