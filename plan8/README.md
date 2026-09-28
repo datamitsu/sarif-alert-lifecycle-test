@@ -22,7 +22,7 @@ line. `generate_test.go.txt` is the harness test that produced them.
 | `sarif/L4.sarif` | `--report 'sarif=…?category=plan8-l4'` | `hadolint` under `plan8-l4/` |
 | `sarif/L5.sarif` | `lint Dockerfile --report sarif=…` (narrowed) | no run at all |
 | `sarif/L6.sarif` | `check --report 'sarif=…?category=plan8-l6'` | the lint operation only, one run per tool |
-| `sarif/L7.sarif` | L2 as the renderer wrote it before the fix | `typecheck`'s run with no result, an error notification and `executionSuccessful: false` |
+| `sarif/L7.sarif` | L2 as the renderer wrote it before two fixes | `typecheck`'s run with no result, an error notification and `executionSuccessful: false` (and `false` for invocations that exited on findings, since corrected) |
 
 ## Checks
 
@@ -35,7 +35,8 @@ which has to be moved to `.github/workflows/` first.
 | --- | --- | --- |
 | C1 | L1 | four open alerts, two per tool |
 | C2 | L2 | DL3059 `fixed`, matched on the `primaryLocationLineHash` L1 wrote; DL3018 open; both `typecheck` alerts still open, untouched (the tool is absent from the upload) |
-| C3 | L3, a directory, from one job | accepted; 21 tools in `datamitsu/`; the `hadolint` and `typecheck` alerts of C2 unchanged (absent from this upload) |
+| C3 | L3's two files, one upload each, from one job | both accepted; 21 tools in `datamitsu/`; the `hadolint` and `typecheck` alerts of C2 unchanged (absent from both uploads) |
+| C3b | L3's directory as one upload | refused: the action combines a directory into one upload of 21 runs, above GitHub's 20 — the reason datamitsu's guide uploads each file in a step of its own |
 | C4 | L4 with the action's `category: other` | the analysis is in category `plan8-l4/`: the file's own id wins |
 | C5 | L5 | recorded as it comes: accepted or refused, and no alert changes |
 | C6 | L6 | accepted in `plan8-l6/` (one run per tool, lint only) |
