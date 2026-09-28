@@ -44,6 +44,8 @@ analyses after each step into `results/`. C3, C3b, C4 and C5b go through
 
 ## What changed in datamitsu
 
+Commit `aea8482` on `feat/ur-08-interchange-formats`:
+
 - C5: a SARIF report that would hold no run is no longer written — an earlier
   file at its path, or the `datamitsu-<n>.sarif` files of its directory, are
   removed, the export is recorded as `omitted`, and a warning says so — so a
