@@ -1,0 +1,1386 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t01",
+          "rules": [
+            {
+              "id": "R01",
+              "shortDescription": {
+                "text": "R01"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t01::1#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R01",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t01"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "c89e33881aac0e46129d0addbae84254a3072102339817fd6db6a89254ed217f",
+            "primaryLocationLineHash": "c89e33881aac0e46129d0addbae84254a3072102339817fd6db6a89254ed217f"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t02",
+          "rules": [
+            {
+              "id": "R02",
+              "shortDescription": {
+                "text": "R02"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t02::2#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R02",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t02"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "98fe93598cd4d7fb24ed8ab803c0ee32edac24d4ccaf2564ecd96d8b63c145cf",
+            "primaryLocationLineHash": "98fe93598cd4d7fb24ed8ab803c0ee32edac24d4ccaf2564ecd96d8b63c145cf"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t03",
+          "rules": [
+            {
+              "id": "R03",
+              "shortDescription": {
+                "text": "R03"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t03::3#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R03",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t03"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "dbe457c73e2ffc38d3f9332cf61bc9d40fbb896ab2101f973551b1593760bebc",
+            "primaryLocationLineHash": "dbe457c73e2ffc38d3f9332cf61bc9d40fbb896ab2101f973551b1593760bebc"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t04",
+          "rules": [
+            {
+              "id": "R04",
+              "shortDescription": {
+                "text": "R04"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t04::4#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R04",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t04"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "1b2ecdb4e75d88afa9d969b034bbf2f5791e053e426d03137a25b220467d33a9",
+            "primaryLocationLineHash": "1b2ecdb4e75d88afa9d969b034bbf2f5791e053e426d03137a25b220467d33a9"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t05",
+          "rules": [
+            {
+              "id": "R05",
+              "shortDescription": {
+                "text": "R05"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t05::5#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R05",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t05"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "0f2b213a6b426a9fe19e58744d255eb0c769806e9bd4b77d8f3bf40eeb905e57",
+            "primaryLocationLineHash": "0f2b213a6b426a9fe19e58744d255eb0c769806e9bd4b77d8f3bf40eeb905e57"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t06",
+          "rules": [
+            {
+              "id": "R06",
+              "shortDescription": {
+                "text": "R06"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t06::6#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R06",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t06"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "d34c20c7f550d5e876fe7cf2cb9be4a82015f3d5307bcbdaa9237e3747d7a02a",
+            "primaryLocationLineHash": "d34c20c7f550d5e876fe7cf2cb9be4a82015f3d5307bcbdaa9237e3747d7a02a"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t07",
+          "rules": [
+            {
+              "id": "R07",
+              "shortDescription": {
+                "text": "R07"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t07::7#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R07",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t07"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "5892b1984820d6cb20bf03c41fd600c09073b53e1db31a42ea32cea1ee3ff03a",
+            "primaryLocationLineHash": "5892b1984820d6cb20bf03c41fd600c09073b53e1db31a42ea32cea1ee3ff03a"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t08",
+          "rules": [
+            {
+              "id": "R08",
+              "shortDescription": {
+                "text": "R08"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t08::8#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R08",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t08"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "f9e880ed4011508e894032af1fc2acd34c88af4f2c8c740682df096bb27d6173",
+            "primaryLocationLineHash": "f9e880ed4011508e894032af1fc2acd34c88af4f2c8c740682df096bb27d6173"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t09",
+          "rules": [
+            {
+              "id": "R09",
+              "shortDescription": {
+                "text": "R09"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t09::9#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R09",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t09"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "e4fd519ca609923beafef07d8ec7a6425ed9fadd0ac576307ea38b23a52efa86",
+            "primaryLocationLineHash": "e4fd519ca609923beafef07d8ec7a6425ed9fadd0ac576307ea38b23a52efa86"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t10",
+          "rules": [
+            {
+              "id": "R10",
+              "shortDescription": {
+                "text": "R10"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t10::10#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R10",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t10"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "58d9ba38980f7c8ad1d81283fcb09a5bce84d99648ab1ea8aca9508c7071c59e",
+            "primaryLocationLineHash": "58d9ba38980f7c8ad1d81283fcb09a5bce84d99648ab1ea8aca9508c7071c59e"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t11",
+          "rules": [
+            {
+              "id": "R11",
+              "shortDescription": {
+                "text": "R11"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t11::11#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R11",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t11"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "5053589a5c8932deda512138fcc1d8d152fdc505361a8098ef50bcd1d792c01a",
+            "primaryLocationLineHash": "5053589a5c8932deda512138fcc1d8d152fdc505361a8098ef50bcd1d792c01a"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t12",
+          "rules": [
+            {
+              "id": "R12",
+              "shortDescription": {
+                "text": "R12"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t12::12#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R12",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t12"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "293c58b3f7258ece22d975d4a30e0736e15762e3614dcb77f60a9ad636b0071a",
+            "primaryLocationLineHash": "293c58b3f7258ece22d975d4a30e0736e15762e3614dcb77f60a9ad636b0071a"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t13",
+          "rules": [
+            {
+              "id": "R13",
+              "shortDescription": {
+                "text": "R13"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t13::13#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R13",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t13"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "51d71531bc55bc623a99b379b94a2bbde58e825db43d462a523383e7cd648536",
+            "primaryLocationLineHash": "51d71531bc55bc623a99b379b94a2bbde58e825db43d462a523383e7cd648536"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t14",
+          "rules": [
+            {
+              "id": "R14",
+              "shortDescription": {
+                "text": "R14"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t14::14#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R14",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t14"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "3281e2bf117d671cca4507b0feaf88bce2db6f0340080be2bbc4764a73bf74d0",
+            "primaryLocationLineHash": "3281e2bf117d671cca4507b0feaf88bce2db6f0340080be2bbc4764a73bf74d0"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t15",
+          "rules": [
+            {
+              "id": "R15",
+              "shortDescription": {
+                "text": "R15"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t15::15#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R15",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t15"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "b4999d489fc9927d5014e80aa483bdfdac172ffa53ac144be475dbaa8146a9cc",
+            "primaryLocationLineHash": "b4999d489fc9927d5014e80aa483bdfdac172ffa53ac144be475dbaa8146a9cc"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t16",
+          "rules": [
+            {
+              "id": "R16",
+              "shortDescription": {
+                "text": "R16"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t16::16#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R16",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t16"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "73fbbd31b24fe79ca96a234075f66af979c7fdbda2ee34b869426f5cad0c32d0",
+            "primaryLocationLineHash": "73fbbd31b24fe79ca96a234075f66af979c7fdbda2ee34b869426f5cad0c32d0"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t17",
+          "rules": [
+            {
+              "id": "R17",
+              "shortDescription": {
+                "text": "R17"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t17::17#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R17",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t17"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "29c9abac27779158a772bd2e0a2382ea63f9bdead1be128a1d4adbe524ab6b7c",
+            "primaryLocationLineHash": "29c9abac27779158a772bd2e0a2382ea63f9bdead1be128a1d4adbe524ab6b7c"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t18",
+          "rules": [
+            {
+              "id": "R18",
+              "shortDescription": {
+                "text": "R18"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t18::18#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R18",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t18"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "3c4b2c1dbf0f13ec22d08370fb46edde3ce0f7be7017eeafc1576208790a1a8f",
+            "primaryLocationLineHash": "3c4b2c1dbf0f13ec22d08370fb46edde3ce0f7be7017eeafc1576208790a1a8f"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t19",
+          "rules": [
+            {
+              "id": "R19",
+              "shortDescription": {
+                "text": "R19"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t19::19#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R19",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t19"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "13baa36e842129bebfdc6c3df1ab1335d023d8275c8be46413aabc431582dbd1",
+            "primaryLocationLineHash": "13baa36e842129bebfdc6c3df1ab1335d023d8275c8be46413aabc431582dbd1"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    },
+    {
+      "automationDetails": {
+        "id": "datamitsu/"
+      },
+      "columnKind": "unicodeCodePoints",
+      "tool": {
+        "driver": {
+          "name": "t20",
+          "rules": [
+            {
+              "id": "R20",
+              "shortDescription": {
+                "text": "R20"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "exitCode": 0,
+          "workingDirectory": {
+            "uri": "./",
+            "uriBaseId": "%SRCROOT%"
+          },
+          "properties": {
+            "datamitsu": {
+              "id": "t20::20#1",
+              "state": "ran",
+              "extraction": "parsed-findings"
+            }
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "R20",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "finding of t20"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/a.ts",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "datamitsu/v1": "057b66e008d7d34e23276ecb9291f2f26f8052d2d235cf491b983c88951ae52a",
+            "primaryLocationLineHash": "057b66e008d7d34e23276ecb9291f2f26f8052d2d235cf491b983c88951ae52a"
+          },
+          "properties": {
+            "provenance": "parser",
+            "gates": false
+          }
+        }
+      ]
+    }
+  ]
+}
