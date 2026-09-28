@@ -1,0 +1,73 @@
+package cli_test
+
+import (
+	"fmt"
+	"os"
+	"path/filepath"
+	"testing"
+
+	"github.com/datamitsu/datamitsu/internal/clitest"
+)
+
+// Temporary: generates the SARIF files of plan 8's live check. Not committed.
+func TestPlan8LiveGen(t *testing.T) {
+	out := os.Getenv("PLAN8_OUT")
+	if out == "" {
+		t.Skip("PLAN8_OUT not set")
+	}
+	files := map[string]string{
+		"fixture.marker": "",
+		"Dockerfile":     "FROM alpine:3.20\nRUN apk add curl\nWORKDIR /app\nCOPY . .\nCMD [\"sh\"]\n",
+		"src/a.ts":       "export function add(a: number, b: number): number {\n  return a + b;\n}\n\nexport const answer = add(40, 2);\n",
+	}
+	tool := func(name, script string, op clitest.ToolOpSpec) string {
+		op.Parser = "hadolint"
+		return clitest.ShellTool(name, settle+clitest.RecordRun+"; "+script, op)
+	}
+	hadolintBoth := `echo '[{"file":"Dockerfile","line":2,"column":1,"level":"warning","code":"DL3018","message":"Pin versions in apk add"},` +
+		`{"file":"Dockerfile","line":4,"column":1,"level":"info","code":"DL3059","message":"Multiple consecutive COPY instructions"}]'`
+	hadolintOne := `echo '[{"file":"Dockerfile","line":2,"column":1,"level":"warning","code":"DL3018","message":"Pin versions in apk add"}]'`
+	typecheck := `echo '[{"file":"src/a.ts","line":5,"column":14,"level":"error","code":"TS2322","message":"Type number is not assignable"},` +
+		`{"file":"src/a.ts","line":1,"column":17,"level":"warning","code":"TS6133","message":"a is declared but never read"}]'`
+	perFile := clitest.ToolOpSpec{Scope: "per-file", Globs: []string{"**/Dockerfile"}, Args: []string{"{file}"}}
+
+	gen := func(name string, tools []string, args ...string) {
+		e := newExecProject(t, files, fixtureSpec)
+		spec := fixtureSpec
+		spec.Parsers = clitest.SeedParserModule(t, e.cache, currentParserModule)
+		e.p.WriteFile("exec.config.js", clitest.ShellConfig(spec, tools...))
+		res := e.run("", nil, args...)
+		t.Logf("%s: exit %d\n%s", name, res.ExitCode, res.Stderr)
+		for _, rel := range []string{"out.sarif", "out/datamitsu-1.sarif", "out/datamitsu-2.sarif"} {
+			data, err := os.ReadFile(filepath.Join(e.p.Dir, rel))
+			if err != nil {
+				continue
+			}
+			target := filepath.Join(out, name+"-"+filepath.Base(rel))
+			if rel == "out.sarif" {
+				target = filepath.Join(out, name+".sarif")
+			}
+			if err := os.WriteFile(target, data, 0o644); err != nil {
+				t.Fatal(err)
+			}
+		}
+	}
+
+	gen("L1", []string{tool("hadolint", hadolintBoth, perFile), tool("typecheck", typecheck, clitest.ToolOpSpec{})},
+		"lint", "--report", "sarif=out.sarif")
+	gen("L2", []string{tool("hadolint", hadolintOne, perFile), tool("typecheck", "echo 'not json'; exit 2", clitest.ToolOpSpec{})},
+		"lint", "--report", "sarif=out.sarif")
+	var many []string
+	for i := 1; i <= 21; i++ {
+		many = append(many, tool(fmt.Sprintf("t%02d", i),
+			fmt.Sprintf(`echo '[{"file":"src/a.ts","line":%d,"column":1,"level":"warning","code":"R%02d","message":"finding of t%02d"}]'`, (i%5)+1, i, i),
+			clitest.ToolOpSpec{}))
+	}
+	gen("L3", many, "lint", "--report", "sarif=out/")
+	gen("L4", []string{tool("hadolint", hadolintBoth, perFile)}, "lint", "--report", "sarif=out.sarif?category=plan8-l4")
+	gen("L5", []string{tool("hadolint", hadolintBoth, perFile)}, "lint", "Dockerfile", "--report", "sarif=out.sarif")
+	gen("L6", []string{
+		tool("hadolint", hadolintBoth, perFile),
+		clitest.ShellTool("formatter", passScript, clitest.ToolOpSpec{Operation: "fix", Parser: "hadolint"}),
+	}, "check", "--report", "sarif=out.sarif?category=plan8-l6")
+}
